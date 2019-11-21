@@ -34,3 +34,12 @@ def Union(lst_one, lst_two):
 
         new_lst = lst_one.extend(lst_two)
         return new_lst
+
+def Intersection(lst_one, lst_two):
+    similar = []
+    x = len(lst_one)
+    for i in range(x):
+        if lst_one[i] in lst_two:
+            similar = similar.append(lst_one[i])
+    return similar
+        
