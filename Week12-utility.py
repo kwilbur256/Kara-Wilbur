@@ -42,4 +42,12 @@ def Intersection(lst_one, lst_two):
         if lst_one[i] in lst_two:
             similar = similar.append(lst_one[i])
     return similar
+
+def NotIn(lst_one, lst_two):
+    different = []
+    x = len(lst_one)
+    for i in range(x):
+        if lst_one[i] not in lst_two:
+            different = different.append(lst_one[i])
+    return different
         
