@@ -19,3 +19,10 @@ def FindWordCoUnt(lst , string):
     number = lst.count(string)
     return number
 
+def ScoreFinder(lst_one, lst_two, string):
+    if string in lst_one:
+        position = lst_one.index(string)
+        print("OUTPUT", string, "got a score of", lst_two[position])
+    else:
+        print("OUTPUT player not found")
+
