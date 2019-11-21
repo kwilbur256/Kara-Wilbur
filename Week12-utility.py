@@ -26,3 +26,11 @@ def ScoreFinder(lst_one, lst_two, string):
     else:
         print("OUTPUT player not found")
 
+def Union(lst_one, lst_two):
+    x = len(lst_one)
+    for i in range(x):
+        if lst_one[i] in lst_two:
+            lst_one = lst_one.pop(i)
+
+        new_lst = lst_one.extend(lst_two)
+        return new_lst
